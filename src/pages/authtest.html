@@ -11,11 +11,6 @@
 
     <h3>REGISTER</h3>
 
-    <p>
-      Lisää käyttäjiä formin avulla. Formi lisää uuden käyttäjän
-      nappulasta 'Add User'.
-    </p>
-
     <!-- https://www.w3schools.com/css/css_form.asp -->
     <!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_form_padding -->
 
@@ -31,19 +26,23 @@
     </pre>
 
     <form class="registerForm">
-      <label for="username">Username</label>
+      <label for="username">Username: 3-8 characters</label>
       <input
         id="username"
         type="text"
         name="username"
         placeholder="Uusi käyttäjä"
+        minlength="3"
+        maxlength="8"
+        required
       />
-      <label for="password">Password</label>
+      <label for="password">Password: Should include min. 8 characters, at least one capitalized letter and an exclamation point !</label>
       <input
         id="password"
         type="password"
         name="password"
         placeholder="salakala"
+        pattern="^(?!.*[\s])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"        required
       />
       <label for="password">Email</label>
       <input
@@ -51,6 +50,7 @@
         type="email"
         name="email"
         placeholder="newuser@example.com"
+        required
       />
       <input
         name="submit"
@@ -95,21 +95,7 @@
     </div>
     <hr />
     <div>
-      <pre><code>
-        # Get user info by token (requires token)
-        GET http://localhost:3000/api/auth/me
-        Authorization: Bearer (put-user-token-here)</code></pre>
-      <button id="meRequest">Make an "authenticated" request</button>
-      <br />
-      <div id="meResponse"></div>
-    </div>
-    <hr />
-    <div>
-      <button id="clearButton">Clear localStorage</button>
-      <br />
-      <code id="clearResponse"></code>
-    </div>
-  </body>
+      <pre>
 
   <script type="module" src="/src/js/auth.js"></script>
 </html>

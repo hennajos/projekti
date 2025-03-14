@@ -1,30 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <nav>
+    <title>Sivu</title>
+    <meta charset="UTF-8" >
+    <link rel="stylesheet" href="src/css/etusivu.css" >
+    <meta name="viewport" content="width=600px, initial-scale=1" />
+
+  </head>      
+
+    <nav class="clearfix">
+      <img class="logo" src="public/img/logo.png" alt="Logo">
       <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
+        <li><a href="src/pages/bmi.html">BMI</a></li>
+        <li><a href="kaytto.asp">Käyttö</a></li>
+        <li><a href="src/pages/paivakirja.html">Päiväkirja</a></li>
+        <li><a href="meista.asp">Meistä</a></li>
+        <li><a href="src/pages/login.html"><strong>Kirjaudu</strong></a></li>
+
       </ul>
     </nav>
-    <h2>Index / Kotisivu</h2>
-    <ul>
-      <li>
-        <a href="./src/pages/apitest.html" target="_blank"
-          >Linkki APItesteihin</a
-        >
-      </li>
-      <li>
-        <a href="./src/pages/authtest.html" target="_blank">Linkki Auth</a>
-      </li>
-    </ul>
 
-    <script type="module" src="/src/js/index.js"></script>
+  <body>
+    <div class="hero"></div>
+
+    <main>
+        <div class="alku">
+        Miten
+        <span id="iso">FoodTracker</span>
+        auttaa sinua saavuttamaan tavoitteesi?
+      </div>
+
+      <div id="text">
+        <img id="mini"  src="public/img/omena.png" alt="Omena">
+
+        <h2 class="yhteystiedot">Yhteystiedot</h2>
+        <h3 class="tarina">Meidän tarinamme</h3>
+        <p>
+          <img class="kuva1" src="public/img/ruoka.jpeg" alt="Ruokaa"> Lorem ipsum, dolor
+          sit amet consectetur adipisicing elit. Architecto sapiente dolores
+          recusandae optio similique esse beatae asperiores, ut quidem vel
+          possimus eaque aspernatur eligendi dolorem pariatur dolorum ipsa,
+          nihil laudantium! <br>
+          <br>
+          Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit. Architecto sapiente dolores recusandae optio similique esse
+          beatae asperiores, ut quidem vel possimus eaque aspernatur eligendi
+          dolorem pariatur dolorum ipsa, nihil laudantium! <br>
+          <br>
+          Lorem ipsum, dolor
+          sit amet consectetur adipisicing elit. Architecto sapiente dolores
+          recusandae optio similique esse beatae asperiores, ut quidem vel
+          possimus eaque aspernatur eligendi dolorem pariatur dolorum ipsa,
+          nihil laudantium! <br>
+          <br>
+          Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit. Architecto sapiente dolores recusandae optio similique esse
+          beatae asperiores, ut quidem vel possimus eaque aspernatur eligendi
+          dolorem pariatur dolorum ipsa, nihil laudantium!
+        </p>
+      </div>
+    </main>
+
+    <footer>Copyright Henna</footer>
   </body>
 </html>
