@@ -22,6 +22,7 @@ node_modules
 *.ntvs*
 *.njsproj
 *.sln
+<<<<<<< HEAD
 *.sw?
 
 *.sw?§
@@ -33,3 +34,7 @@ node_modules
 
 .venv
 >>>>>>> main
+=======
+*.sw?§
+*.sw?
+>>>>>>> 185ace4 (dist)
