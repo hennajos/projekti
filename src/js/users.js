@@ -156,6 +156,7 @@ const addUser = async (event) => {
   }
 
   if (response.message) {
+    //alert(response.message);
     console.log(response.message);
     showSnackbar('Onnistunut käyttäjän lisääminen :) 💕', 'success');
   }

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="../css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
@@ -18,10 +19,10 @@
 
       <ul class="testlist"></ul>
 
+      <h3>Esimerkkitaulukko, staattinen</h3>
+      
       <pre>GET http://localhost:3000/api/items </pre>
       <button class="get_items">Get all items</button>
-
-      <h3>Esimerkkitaulukko, staattinen</h3>
 
       <table class="styled-table">
         <thead>
@@ -70,6 +71,9 @@
             kun reitti on valmiina. metodilla. Info on kotitehtävä ja Delete
             toiminto lisätään myöhemmin
           </p>
+        
+          <button class="check"> Hae tiedot</button>
+
 
           <table class="styled-table">
             <thead>
@@ -140,14 +144,20 @@
         </div>
       </div>
 
+<<<<<<< HEAD
       <h3>Flexboxilla tehdyt kortit - Runko</h3>
       <!-- kortit sisältävä flex parent -->
 
+=======
+      <h3>Flexboxilla tehdyt kortit</h3>
+      <!-- kortit sisältävä flex parent -->
+>>>>>>> 428e961 (flexbox)
       <section class="card-area">
         <!-- yksittäinen kortti -->
         <div class="card">
           <!-- vasen puoli jossa kuva -->
           <div class="card-img">
+<<<<<<< HEAD
             <img src="public/img/diary.jpg" alt="" />
           </div>
 
@@ -155,14 +165,29 @@
           <div class="card-diary">
             <!-- tänne myös flexbox rakenne -->
             Tänne dataa
+=======
+            <img src="img/kortti.jpeg" alt="" />
+          </div>
+      
+          <!-- oikea puoli jossa päiväkirjamerkintä-->
+          <div class="card-diary">
+            <!-- tänne myös flexbox rakenne -->
+            Paina napista
+>>>>>>> 428e961 (flexbox)
           </div>
         </div>
       </section>
 
+<<<<<<< HEAD
       <h3>Flexboxilla tehty kortti + Fetch + Itse luodut elementit</h3>
 
       <button class="get_entries">Hae päiväkirjamerkinnät</button>
       <section class="card-area" id="diary"></section>
+=======
+      <button class="get_entries">Hae päiväkirjamerkinnät</button>
+      <section class="card-area2"></section>
+
+>>>>>>> 428e961 (flexbox)
     </main>
 
     <!-- The actual snackbar -->
@@ -173,11 +198,26 @@
         <!-- tähän täytetään käyttäjän tiedot -->
         <!-- # Get user by id -->
         <!-- GET http://127.0.0.1:3000/api/users/1 -->
-        <!---->
+    
+    
+        <div>UserID: <span>Id</span></div>
+        <div>UserName: <span>Username</span></div>
+        <div>Email: <span>Email</span></div>
+        <div>Role: <span>Role</span></div>
       </p>
       <button autofocus>Close</button>
     </dialog>
 
+<<<<<<< HEAD
     <script type="module" src="../js/main.js"></script>
+=======
+    <button class="check" data-id="1">Info for User 1</button>
+
+    
+
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/flexbox.js"></script>
+
+>>>>>>> 428e961 (flexbox)
   </body>
 </html>
