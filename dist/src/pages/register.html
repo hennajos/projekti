@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekisteröidy</title>
+  <link rel="stylesheet" crossorigin href="../../assets/login-CxDwRG40.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Rekisteröidy</h2>
+        <p>Käyttäjänimen pituus 3-20 merkkiä</p>
+        <p>Salasanan pituus min. 8 merkkiä</p>
+
+
+        <form id="registerForm">
+            <input type="text" id="name" placeholder="Käyttäjänimi" required>
+            <input type="email" id="email" placeholder="Sähköposti" required>
+            <input type="password" id="password" placeholder="Salasana" required>
+            <button type="submit">Rekisteröidy</button>
+        </form>
+        <p>Onko sinulla jo tili? <a href="login.html">Kirjaudu</a></p>
+        <p id="message"></p>
+    </div>
+
+    <script src="../js/auth.js"></script>
+</body>
+</html>
