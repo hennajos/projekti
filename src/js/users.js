@@ -45,7 +45,7 @@ const getUsers = async () => {
   const users = await fetchData(url, options);
 
   if (users.error) {
-    console.log('Tapahtui virhe fetch haussa!!');
+    console.log('Tapahtui virhe user fetch haussa!!');
     return;
   }
 

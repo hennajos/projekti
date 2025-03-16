@@ -4,25 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rekisteröidy</title>
-    <link rel="stylesheet" href="../css/login.css">
-</head>
+</head> 
+
 <body>
+<nav class="clearfix">
+  <img class="logo" src="/img/logo.png" alt="Logo">
+  <ul>
+    <li><a href="/index.html">Meistä</a></li>
+    <li><a href="./bmi.html">BMI</a></li>
+    <li><a href="./diary.html">Päiväkirja</a></li>
+    <li><a href="./login.html"><strong>Kirjaudu</strong></a></li>
+
+  </ul>
+</nav>
+
+    <div class="hero"></div>
+    <main>
     <div class="container">
         <h2>Rekisteröidy</h2>
         <p>Käyttäjänimen pituus 3-20 merkkiä</p>
-        <p>Salasanan pituus min. 8 merkkiä</p>
+        <p>Salasanan pituus min. 8 merkkiä, vähintään yksi iso kirjain</p>
 
-
-        <form id="registerForm">
-            <input type="text" id="name" placeholder="Käyttäjänimi" required>
+        <form class="registerForm">
+            <input type="username" id="username" placeholder="Käyttäjänimi" required>
             <input type="email" id="email" placeholder="Sähköposti" required>
-            <input type="password" id="password" placeholder="Salasana" required>
+            <input type="password" id="password" placeholder="Salasana" pattern="^(?!.*[\s])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"  required>
             <button type="submit">Rekisteröidy</button>
         </form>
         <p>Onko sinulla jo tili? <a href="login.html">Kirjaudu</a></p>
         <p id="message"></p>
     </div>
 
-    <script src="../js/auth.js"></script>
+    <script type="module" src="../js/auth.js"></script>
+    </main>
 </body>
 </html>

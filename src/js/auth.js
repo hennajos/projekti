@@ -8,48 +8,53 @@ import {fetchData} from './fetch.js';
 const registerUser = async (event) => {
   event.preventDefault();
 
-  // Haetaan oikea formi
   const registerForm = document.querySelector('.registerForm');
 
-  // Haetaan formista arvot
   const username = registerForm.querySelector('#username').value.trim();
   const password = registerForm.querySelector('#password').value.trim();
   const email = registerForm.querySelector('#email').value.trim();
 
-  // Luodaan body lähetystä varten taustapalvelun vaatimaan muotoon
-  const bodyData = {
-    username: username,
-    password: password,
-    email: email,
-  };
+  const bodyData = { username, password, email };
 
-  // Endpoint
-  const url = 'http://localhost:3000/api/users';
+  try {
+    // Lähetetään rekisteröintipyyntö
+    const response = await fetch('http://localhost:3000/api/users', {
+      method: 'POST',
+      headers: { 'Content-type': 'application/json' },
+      body: JSON.stringify(bodyData),
+    });
 
-  // Options
-  const options = {
-    body: JSON.stringify(bodyData),
-    method: 'POST',
-    headers: {
-      'Content-type': 'application/json',
-    },
-  };
-  console.log(options);
+    const responseData = await response.json();
 
-  // Hae data
-  const response = await fetchData(url, options);
+    if (!response.ok) {
+      throw new Error(responseData.error || 'Rekisteröinti epäonnistui');
+    }
 
-  if (response.error) {
-    console.error('Error adding a new user:', response.error);
-    return;
+    console.log(responseData.message, 'success');
+    registerForm.reset(); // Tyhjennetään lomake
+
+    // Automaattinen kirjautuminen rekisteröinnin jälkeen
+    const loginResponse = await fetch('http://localhost:3000/api/auth/login', {
+      method: 'POST',
+      headers: { 'Content-type': 'application/json' },
+      body: JSON.stringify({ username, password }),
+    });
+
+    const loginData = await loginResponse.json();
+
+    if (!loginResponse.ok) {
+      throw new Error('Kirjautuminen epäonnistui rekisteröinnin jälkeen');
+    }
+
+    localStorage.setItem('token', loginData.token);
+    localStorage.setItem('nimi', loginData.user.username);
+
+    // Ohjataan päiväkirjaan
+    window.location.href = "src/pages/diary.html";
+
+  } catch (error) {
+    console.error(error.message);
   }
-
-  if (response.message) {
-    console.log(response.message, 'success');
-  }
-
-  console.log(response);
-  registerForm.reset(); // tyhjennetään formi
 };
 
 const loginUser = async (event) => {
@@ -58,9 +63,8 @@ const loginUser = async (event) => {
   // Haetaan oikea formi
   const loginForm = document.querySelector('.loginForm');
 
-  // Haetaan formista arvot, tällä kertaa käyttäen attribuuutti selektoreita
-  const username = loginForm.querySelector('input[name=username]').value;
-  const password = loginForm.querySelector('input[name=password]').value;
+  const username = loginForm.querySelector('#username').value.trim();
+  const password = loginForm.querySelector('#password').value.trim();
 
   // Luodaan body lähetystä varten taustapalvelun vaatimaan muotoon
   const bodyData = {
@@ -99,8 +103,7 @@ const loginUser = async (event) => {
   loginForm.reset(); // tyhjennetään formi
 
   // ohjataan päiväkirjasivulle kirjautumisen jälkeen
-  window.location.href = "src/pages/diary.html";
-
+  window.location.replace("/pages/diary.html");
 };
 
 const checkUser = async (event) => {
@@ -137,11 +140,22 @@ const checkUser = async (event) => {
   console.log(response);
 };
 
-const registerForm = document.querySelector('.registerForm');
-registerForm.addEventListener('submit', registerUser);
+document.addEventListener('DOMContentLoaded', () => {
+  const registerForm = document.querySelector('.registerForm');
+  const loginForm = document.querySelector('.loginForm');
+  const meRequest = document.querySelector('#meRequest');
 
-const loginForm = document.querySelector('.loginForm');
-loginForm.addEventListener('submit', loginUser);
+  // Add event listeners
+  if (registerForm) registerForm.addEventListener('submit', registerUser);
+  if (loginForm) loginForm.addEventListener('submit', loginUser);
+  if (meRequest) meRequest.addEventListener('click', checkUser);
+});
 
-const meRequest = document.querySelector('#meRequest');
-meRequest.addEventListener('click', checkUser);
+//const registerForm = document.querySelector('.registerForm');
+//registerForm.addEventListener('submit', registerUser);
+
+//const loginForm = document.querySelector('.loginForm');
+//loginForm.addEventListener('submit', loginUser);
+
+// const meRequest = document.querySelector('#meRequest');
+// meRequest.addEventListener('click', checkUser);

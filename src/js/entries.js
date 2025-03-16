@@ -9,11 +9,11 @@ const getEntries = async () => {
   console.log(diaryContainer);
 
   // haetaan data joko json tai fetch rajapinnasta
-  const url = 'http://localhost:3000/api/entries';
+  const url = 'http://localhost:3000/api/auth/entries';
   const response = await fetchData(url);
 
   if (response.error) {
-    console.log('Tapahtui virhe fetch haussa!!');
+    console.log('Tapahtui virhe entries fetch haussa!!');
     return;
   }
 
@@ -24,14 +24,6 @@ const getEntries = async () => {
   response.forEach((entry) => {
     const card = document.createElement('div');
     card.classList.add('card');
-
-    const cardImg = document.createElement('div');
-    cardImg.classList.add('card-img');
-
-    const img = document.createElement('img');
-    img.src = '/img/diary.jpg';
-    img.alt = 'Diary Image';
-    cardImg.appendChild(img);
 
     const cardDiary = document.createElement('div');
     cardDiary.classList.add('card-diary');
@@ -45,7 +37,6 @@ const getEntries = async () => {
 
     `;
 
-    card.appendChild(cardImg);
     card.appendChild(cardDiary);
     diaryContainer.appendChild(card);
   });
@@ -71,7 +62,7 @@ const addEntry = async (event) => {
     notes,
   };
 
-  const url = 'http://localhost:3000/api/entries';
+  const url = 'http://localhost:3000/api/auth/entries';
   const options = {
     method: 'POST',
     headers: {

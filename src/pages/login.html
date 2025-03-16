@@ -3,22 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="../css/login.css">
+    <title>Kirjaudu</title>
 </head>
-<body>
-    <div class="container">
-        <h2>Kirjaudu sisään</h2>
-        <form id="loginForm">
-            <input type="email" id="email" placeholder="Sähköposti" required>
-            <input type="password" id="password" placeholder="Salasana"         pattern="^(?!.*[\s])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"        required
-            required>
-            <button type="submit">Kirjaudu</button>
-        </form>
-        <p>Ei vielä tiliä? <a href="register.html">Rekisteröidy</a></p>
-        <p id="message"></p>
-    </div>
 
-    <script src="../js/auth.js"></script>
+<body>
+    <nav class="clearfix">
+        <img class="logo" src="/img/logo.png" alt="Logo">
+        <ul>
+            <li><a href="/index.html">Meistä</a></li>
+            <li><a href="./bmi.html">BMI</a></li>
+            <li><a href="./diary.html">Päiväkirja</a></li>
+            <li><a href="./login.html"><strong>Kirjaudu</strong></a></li>
+        </ul>
+    </nav>
+
+    <div class="hero"></div>
+    
+    <main>
+        <div class="login-container">
+            <div class="login-card">
+                <h2>Kirjaudu sisään</h2>
+                <form class="loginForm">
+                    <input type="text" id="username" placeholder="Käyttäjänimi" required>
+                    <input type="password" id="password" placeholder="Salasana" required>
+                    <button type="submit">Kirjaudu</button>
+                </form>
+                <p>Ei vielä tiliä? <a href="register.html">Rekisteröidy</a></p>
+                <p id="message"></p>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="../js/auth.js"></script>
 </body>
 </html>

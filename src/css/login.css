@@ -9,10 +9,45 @@ body {
   background: linear-gradient(135deg, #a3b4ff, #d1c0e2);
   font-family: 'Inter', sans-serif;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
   margin: 0;
+}
+
+.clearfix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(198, 235, 235);
+  padding: 10px 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clearfix .logo {
+  height: 60px;
+  padding-left: 20px;
+}
+
+.clearfix ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix ul li {
+  margin: 0 20px;
+}
+
+.clearfix ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
 }
 
 .login-container {
@@ -20,6 +55,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 20px;
+  margin-top: 80px;
 }
 
 .login-card {
@@ -30,72 +67,3 @@ body {
   text-align: center;
   width: 350px;
 }
-
-h2 {
-  margin-bottom: 20px;
-  color: #333;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  text-align: left;
-  font-weight: bold;
-  margin-top: 10px;
-  color: #444;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  transition: border-color 0.3s;
-}
-
-input:focus {
-  border-color: var(--primary);
-  outline: none;
-}
-
-button {
-  background: var(--primary);
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-top: 15px;
-  font-size: 1rem;
-  transition: background 0.3s;
-}
-
-button:hover {
-  background: #357ABD;
-}
-
-p {
-  margin-top: 15px;
-  color: #211f1f;
-}
-
-p a {
-  color: var(--primary);
-  text-decoration: none;
-}
-
-p a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 400px) {
-  .login-card {
-      width: 90%;
-  }
-}
-
-

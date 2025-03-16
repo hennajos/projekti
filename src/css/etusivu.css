@@ -58,7 +58,7 @@ a:active {
 .hero {
   width: 100%;
   height: 600px;
-  background-image: url('public/img/taustakuva.webp');
+  background-image: url('/img/taustakuva.webp');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

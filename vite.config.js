@@ -7,13 +7,11 @@ export default defineConfig({
     rollupOptions: {
       input: {
         // List your html files here, e.g:
-        apitest: resolve(__dirname, 'src/pages/apitest.html'),
-        authtest: resolve(__dirname, 'src/pages/authtest.html'),
         main: resolve(__dirname, 'index.html'),
+        bmi: resolve(__dirname, 'src/pages/bmi.html'),
         login: resolve(__dirname, 'src/pages/login.html'),
         register: resolve(__dirname, 'src/pages/register.html'),
         diary: resolve(__dirname, 'src/pages/diary.html')
-
       },
     },
   },
