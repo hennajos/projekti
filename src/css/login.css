@@ -6,57 +6,64 @@
 }
 
 body {
-  background: linear-gradient(135deg, #a3b4ff, #d1c0e2);
-  font-family: 'Inter', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: rgb(205, 191, 227);
   margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .clearfix {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  background-color: rgb(198, 235, 235);
-  padding: 10px 0;
-  z-index: 1000;
+  background: linear-gradient(135deg, #4a90e2, #6a5acd);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 15px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 
 .clearfix .logo {
   height: 60px;
-  padding-left: 20px;
 }
 
 .clearfix ul {
   list-style: none;
   display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.clearfix ul li {
-  margin: 0 20px;
+  gap: 20px;
 }
 
 .clearfix ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 18px;
   font-family: Arial, sans-serif;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.clearfix ul li a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #ffeb3b;
+}
+
+.clearfix ul li a:active {
+  color: #ff9800;
 }
 
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  padding: 20px;
-  margin-top: 80px;
+  height: calc(100vh - 100px);
 }
 
 .login-card {
@@ -66,4 +73,62 @@ body {
   box-shadow: 0px 4px 20px var(--shadow);
   text-align: center;
   width: 350px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-card button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-card button:hover {
+  background-color: #357ABD;
+}
+
+.login-card p {
+  margin-top: 15px;
+}
+
+.login-card a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.login-card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .clearfix {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+  }
+
+  .clearfix ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .hero {
+      height: 300px;
+      padding: 50px 0; /* Adjust for mobile view */
+      font-size: 28px;
+  }
 }

@@ -9,6 +9,7 @@ const getEntries = async () => {
   console.log(diaryContainer);
 
   // haetaan data joko json tai fetch rajapinnasta
+  //const url = 'diary.json';
   const url = 'http://localhost:3000/api/auth/entries';
   const response = await fetchData(url);
 

@@ -8,10 +8,10 @@ export default defineConfig({
       input: {
         // List your html files here, e.g:
         main: resolve(__dirname, 'index.html'),
-        bmi: resolve(__dirname, 'src/pages/bmi.html'),
-        login: resolve(__dirname, 'src/pages/login.html'),
-        register: resolve(__dirname, 'src/pages/register.html'),
-        diary: resolve(__dirname, 'src/pages/diary.html')
+        bmi: resolve(__dirname, 'bmi.html'),
+        login: resolve(__dirname, 'login.html'),
+        register: resolve(__dirname, 'register.html'),
+        diary: resolve(__dirname, 'diary.html')
       },
     },
   },

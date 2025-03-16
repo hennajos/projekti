@@ -3,56 +3,48 @@ body {
   margin: 0;
 }
 
-.clearfix::after {
-  content: '';
-  clear: both;
-  display: table;
-}
-
 .clearfix {
   position: fixed;
-  z-index: 10000;
-  background-color: rgb(198, 235, 235);
+  top: 0;
   width: 100%;
-  padding: 10px;
-}
-
-nav {
+  margin: 0 auto;
+  max-width: 1750px;
+  background: linear-gradient(135deg, #4a90e2, #6a5acd);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 15px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 
 .clearfix .logo {
-  width: auto;
-  height: 80px;
-  padding-left: 20px;
+  height: 60px;
 }
 
 .clearfix ul {
-  list-style-type: none;
-  height: 40px;
-  width: 100%;
+  list-style: none;
   display: flex;
-  padding: 20px;
-  margin-left: 20px;
+  gap: 20px;
 }
 
 .clearfix ul li a {
   text-decoration: none;
-  color: black;
-  margin: 30px;
-  padding: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  color: white;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
-a:hover {
-  color: #f1f5ff;
+.clearfix ul li a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #ffeb3b;
 }
 
-a:active {
-  color: #efb6f5;
+.clearfix ul li a:active {
+  color: #ff9800;
 }
 
   h3 {
@@ -88,8 +80,7 @@ a:active {
     color: white;
     border: none;
     padding: 10px;
-    margin-top: 50px;
-    margin-left: 80px;
+    margin-left: 40px;
     cursor: pointer;
     border-radius: 4px;
   }
@@ -114,6 +105,24 @@ a:active {
     margin: 10px;
     text-align: left;
   }
-  
 
+  @media (max-width: 768px) {
+    .clearfix {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .clearfix ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero {
+        height: 300px;
+        padding: 50px 0; /* Adjust for mobile view */
+        font-size: 28px;
+    }
+}
   

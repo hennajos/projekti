@@ -50,7 +50,7 @@ const registerUser = async (event) => {
     localStorage.setItem('nimi', loginData.user.username);
 
     // Ohjataan päiväkirjaan
-    window.location.href = "src/pages/diary.html";
+    //window.location.href = "diary.html";
 
   } catch (error) {
     console.error(error.message);
@@ -103,7 +103,8 @@ const loginUser = async (event) => {
   loginForm.reset(); // tyhjennetään formi
 
   // ohjataan päiväkirjasivulle kirjautumisen jälkeen
-  window.location.replace("/pages/diary.html");
+  //window.location.href = "diary.html";
+
 };
 
 const checkUser = async (event) => {
