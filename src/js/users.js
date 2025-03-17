@@ -61,9 +61,9 @@ const getUsers = async () => {
     row.innerHTML = `
         <td>${user.username}</td>
         <td>${user.email}</td>
-        <td><button class="check" data-id="${user.user_id}">Info</button></td>
-        <td><button class="del" data-id="${user.user_id}">Delete</button></td>
-        <td>${user.user_id}</td>
+        <td><button class="check" data-id="${user.id}">Info</button></td>
+        <td><button class="del" data-id="${user.id}">Delete</button></td>
+        <td>${user.id}</td>
       `;
 
     tableBody.appendChild(row);
@@ -147,18 +147,11 @@ const addUser = async (event) => {
   if (response.error) {
     // On hyvä jättää oikea virhe ns. koodareille luettavaksi
     console.log(response.error);
-    // Käyttäjän viesti!!
-    showSnackbar(
-      'Virhe lähettämisessä, täytä kaikki vaadittavat kentät!',
-      'error',
-    );
     return;
   }
 
   if (response.message) {
-    //alert(response.message);
-    console.log(response.message);
-    showSnackbar('Onnistunut käyttäjän lisääminen :) 💕', 'success');
+    alert(response.message);
   }
 
   console.log(response);

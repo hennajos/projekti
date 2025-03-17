@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/bmi.css" >
+  <script src="js/bmi.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI-laskuri</title>
+</head>
+  
+        
+        <main>
+          <div class="card">
+            <img src="public/img/bmi.webp" alt="BMI Index chart" style="width: 100%" />
+            <h2>Painoindeksilaskuri / BMI-laskuri</h2>
+            <p class="description">
+              Painoindeksilaskurilla voit laskea pituuden ja painon perustella
+              painoindeksin (BMI, Body Mass Index).
+            </p>
+    
+            <form action="">
+              <label for="weight">Anna painosi:</label>
+              <input type="text" id="weight" name="weight" placeholder="kg" />
+              <label for="height">Anna pituutesi:</label>
+              <input type="text" id="height" name="height" placeholder="cm" />
+              <button type="submit" class="btn calculate">Laske indeksi</button>
+            </form>
+    
+            <section class="bmi-table">
+              <p>Mittaustuloksesi: <span class="bmi-score">0</span></p>
+    
+              <table id="bmiTbl" class="table table-bordered">
+                <tbody>
+                  <tr class="bmi0-19">
+                    <td>Alipaino</td>
+                    <td>0 - 18.9</td>
+                  </tr>
+                  <tr class="bmi19-25">
+                    <td>Normaali paino</td>
+                    <td>19 - 24.9</td>
+                  </tr>
+                  <tr class="bmi25-40">
+                    <td>Ylipaino</td>
+                    <td>25.0 - 40.0 tai enemmän</td>
+                  </tr>
+                </tbody>
+              </table>
+    
+              <p>
+                〽️ Analyysi:
+                <span class="analysis">Tähän saat analyysin BMI tuloksestasi</span>
+              </p>
+            </section>
+          </div>
+</html>

@@ -9,6 +9,16 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+<<<<<<< HEAD
+    "vite": "^6.0.5"
+=======
+<<<<<<< HEAD
+    "vite": "^6.1.0"
+>>>>>>> e6e0991 (dist)
+  }
+}
+=======
     "vite": "^6.0.5"
   }
 }
+>>>>>>> 55de2b2 (vite-projektin runko)

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Päiväkirja</title>
+    <link rel="stylesheet" href="../css/diary.css">
+  </head>
+<body>
+<main>
+<h3>Päiväkirja</h3>
+      <!-- kortit sisältävä flex parent -->
+
+      <section class="card-area">
+        <!-- yksittäinen kortti -->
+        <div class="card">
+          <!-- vasen puoli jossa kuva -->
+          <div class="card-img">
+            <img src="public/img/diary.jpg" alt="" />
+          </div>
+
+          <!-- oikea puoli jossa päiväkirjamerkintä-->
+          <div class="card-diary">
+
+          </div>
+        </div>
+      </section>
+
+      <button class="get_entries">Hae päiväkirjamerkinnät</button>
+      <section class="card-area" id="diary"></section>
+           <!-- Merkintöjen lisäämislomake -->
+           <form id="diary-form">
+            <h4>Lisää merkintä</h4>
+            <label for="entry_date">Päivämäärä:</label>
+            <input type="date" id="entry_date" required>
+            
+            <label for="mood">Mieliala:</label>
+            <input type="text" id="mood" placeholder="Esim. hyvä, väsynyt" required>
+    
+            <label for="weight">Paino (kg):</label>
+            <input type="number" id="weight" placeholder="Esim. 70" required>
+    
+            <label for="sleep_hours">Uni (h):</label>
+            <input type="number" id="sleep_hours" placeholder="Esim. 8" required>
+    
+            <label for="meal">Ateria:</label>
+            <input type="text" id="meal" placeholder="Esim. Aamupala: puuro ja kahvi" required>
+    
+            <label for="notes">Muistiinpanot:</label>
+            <textarea id="notes" placeholder="Muita muistiinpanoja"></textarea>
+    
+            <button type="submit">Tallenna merkintä</button>
+          </form>
+        
+          <!-- Korttien alue -->
+          <section class="card-area" id="diary"></section>
+        </main>
+    
+        <script type="module" src="../js/entries.js"></script>
+    </body>
