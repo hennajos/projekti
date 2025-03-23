@@ -7,9 +7,11 @@ Asennettu front-endiin ja back-endiin:
 - CryptoLibrary
 - Robotidy
 
+![Screenshot 2025-03-17 at 10 39 20](https://github.com/user-attachments/assets/9af77a70-9225-452f-b81e-952d44d11293)
+
+
 ![Screenshot 2025-03-17 at 10 42 24](https://github.com/user-attachments/assets/c6da0ef2-9d61-4593-938d-bdc4fde75665)
 
-![Screenshot 2025-03-17 at 10 39 20](https://github.com/user-attachments/assets/9af77a70-9225-452f-b81e-952d44d11293)
 
 Asennus front-endiin:
 
