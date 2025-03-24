@@ -24,4 +24,11 @@ node_modules
 *.sw?
 
 *.sw?§
+<<<<<<< HEAD
 
+=======
+*.sw?
+
+
+.venv
+>>>>>>> main

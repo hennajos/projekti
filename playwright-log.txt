@@ -1,0 +1,29 @@
+{"level":30,"time":"2025-03-24T15:38:17.524Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"Listening on 61172"}
+(node:13409) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-03-24T15:38:18.620Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-03-24T15:38:29.693Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-03-24T15:38:29.702Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-03-24T15:38:29.696Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-03-24T15:38:29.743Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-03-24T15:38:29.743Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-03-24T15:38:29.786Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"Changed active context"}
+{"level":30,"time":"2025-03-24T15:38:31.856Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"Video path: undefined"}
+{"level":30,"time":"2025-03-24T15:38:31.856Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"Changed active page"}
+{"level":30,"time":"2025-03-24T15:38:32.464Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"End of node method newPage"}
+{"level":30,"time":"2025-03-24T15:38:32.511Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-03-24T15:38:32.513Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"Strict mode is enabled, find Locator with [name=\"my-text\"] in page."}
+{"level":30,"time":"2025-03-24T15:38:34.722Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"End of node method typeText"}
+{"level":30,"time":"2025-03-24T15:38:34.730Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-03-24T15:38:34.730Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"Strict mode is enabled, find Locator with [name=\"my-password\"] in page."}
+{"level":30,"time":"2025-03-24T15:38:36.077Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"End of node method typeText"}
+{"level":30,"time":"2025-03-24T15:38:36.097Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-03-24T15:38:36.097Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"Strict mode is enabled, find Locator with [name=\"my-textarea\"] in page."}
+{"level":30,"time":"2025-03-24T15:38:40.704Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"End of node method typeText"}
+{"level":30,"time":"2025-03-24T15:38:40.712Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2025-03-24T15:38:40.712Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"Strict mode is enabled, find Locator with button in page."}
+{"level":30,"time":"2025-03-24T15:38:42.966Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2025-03-24T15:38:42.974Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"Start of node method getText"}
+{"level":30,"time":"2025-03-24T15:38:42.974Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"Strict mode is enabled, find Locator with id=message in page."}
+{"level":30,"time":"2025-03-24T15:38:43.028Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"Retrieved text for element id=message containing Received!"}
+{"level":30,"time":"2025-03-24T15:38:43.028Z","pid":13409,"hostname":"Henna-MacBook-Air.local","msg":"End of node method getText"}

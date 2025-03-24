@@ -3,9 +3,6 @@
  *
  * @param {string} url - api endpoint url
  * @param {Object} options - request options, metodit GET default, POST, DELTE
- * @param {Object} options - request options
- * @param {Object} options - request options, metodit GET default, POST, DELTE
-
  *
  * @returns {Object} response json data
  */
@@ -24,5 +21,4 @@ const fetchData = async (url, options = {}) => {
   }
 };
   
-  export {fetchData};
-
+export {fetchData};
