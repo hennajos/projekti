@@ -10,6 +10,8 @@ lerna-debug.log*
 node_modules
 *.local
 
+.venv
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -19,12 +21,7 @@ node_modules
 *.ntvs*
 *.njsproj
 *.sln
-<<<<<<< HEAD
 *.sw?
-=======
-<<<<<<< HEAD
+
 *.sw?§
-=======
-*.sw?
->>>>>>> 55de2b2 (vite-projektin runko)
->>>>>>> e6e0991 (dist)
+
