@@ -27,19 +27,28 @@ Kirjautumistesti omalle terveyspäiväkirjasovellukselle.
 Käytetty ChatGPT 4.0 antamaan testikoodille pohjan.
 
 ![Screenshot 2025-03-29 at 22 55 06](https://github.com/user-attachments/assets/431b9af1-d5db-4a38-bd39-55d672b9a256)
+
 Tässä näkyy testikoodi ja tulos.
+
 ![Screenshot 2025-03-29 at 22 51 00](https://github.com/user-attachments/assets/9f55cfc2-2244-4a58-9ef8-d4dee16c7e1a)
+
 Tässä näkyy Chromium-sivu.
 
 
 ## Tehtävä 3
 Web form -sivun toiminta.
-Käytetty ChatGPT 4.0 antamaan testikoodille pohjan testaamaan Dropdown (select), Dropdown (datalist), File input, Checkboxit ja Radio buttonit. Auttoi myös debuggaamisessa.
+Käytetty ChatGPT 4.0 antamaan testikoodille pohjan testaamaan Dropdown (select), Dropdown (datalist), File input, Checkboxit ja Radio buttonit. Tekoäly auttoi myös debuggaamisessa.
+
 ![Screenshot 2025-03-24 at 21 20 16](https://github.com/user-attachments/assets/6375319b-5e23-4e9f-807a-787d6f12e9d1)
+
 Web form -sivu
+
 ![Screenshot 2025-03-29 at 23 42 46](https://github.com/user-attachments/assets/a69cf11c-99ea-43ea-9a33-c5d4abdc5d9a)
+
 Testauskoodi
+
 ![Screenshot 2025-03-29 at 23 47 25](https://github.com/user-attachments/assets/60678e95-16f9-47f2-a220-6c70dd74fc69)
+
 Tulokset. Jostain syystä tuli tässä fail.
 
 
