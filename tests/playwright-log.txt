@@ -1,0 +1,47 @@
+{"level":30,"time":"2025-03-29T21:45:18.148Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Listening on 50004"}
+(node:10950) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-03-29T21:45:19.249Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-03-29T21:45:20.191Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-03-29T21:45:20.192Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-03-29T21:45:20.191Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-03-29T21:45:20.213Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-03-29T21:45:20.213Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-03-29T21:45:20.288Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Changed active context"}
+{"level":30,"time":"2025-03-29T21:45:21.564Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Video path: undefined"}
+{"level":30,"time":"2025-03-29T21:45:21.565Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Changed active page"}
+{"level":30,"time":"2025-03-29T21:45:22.222Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"End of node method newPage"}
+{"level":30,"time":"2025-03-29T21:45:22.320Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-03-29T21:45:22.321Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Strict mode is enabled, find Locator with [name=\"my-text\"] in page."}
+{"level":30,"time":"2025-03-29T21:45:24.562Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"End of node method typeText"}
+{"level":30,"time":"2025-03-29T21:45:24.577Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Strict mode is enabled, find Locator with [name=\"my-password\"] in page."}
+{"level":30,"time":"2025-03-29T21:45:24.577Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-03-29T21:45:25.887Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"End of node method typeText"}
+{"level":30,"time":"2025-03-29T21:45:25.897Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-03-29T21:45:25.897Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Strict mode is enabled, find Locator with [name=\"my-textarea\"] in page."}
+{"level":30,"time":"2025-03-29T21:45:30.464Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"End of node method typeText"}
+{"level":30,"time":"2025-03-29T21:45:30.472Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-03-29T21:45:30.472Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Strict mode is enabled, find Locator with css=[name=\"my-select\"] in page."}
+{"level":30,"time":"2025-03-29T21:45:30.524Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Option entries: 4"}
+{"level":30,"time":"2025-03-29T21:45:30.525Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-03-29T21:45:30.524Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-03-29T21:45:30.534Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-29T21:45:30.535Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Strict mode is enabled, find Locator with css=[name=\"my-datalist\"] in page."}
+{"level":30,"time":"2025-03-29T21:45:30.558Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"End of node method fillText"}
+{"level":30,"time":"2025-03-29T21:45:30.612Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-03-29T21:45:30.615Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Strict mode is enabled, find Locator with css=option[value=\"San Francisco\"] in page."}
+{"level":30,"time":"2025-03-29T21:45:35.619Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for locator('option[value="San Francisco"]') to be visible[22m
+[2m    15 × locator resolved to hidden <option value="San Francisco">↵                </option>[22m
+
+    at waitForElementState (/Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/lib/python3.10/site-packages/Browser/wrapper/index.js:11283:19)
+    at async PlaywrightServer.waitForElementsState (/Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/lib/python3.10/site-packages/Browser/wrapper/index.js:13132:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-03-29T21:45:35.630Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-03-29T21:45:35.631Z","pid":10950,"hostname":"Henna-MacBook-Air.local","Take screenshot with options: ":{"path":"/Users/hennatuovinen/Documents/hyte-web/vite-project/tests/browser/screenshot/fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-03-29T21:45:35.764Z","pid":10950,"hostname":"Henna-MacBook-Air.local","msg":"End of node method takeScreenshot"}

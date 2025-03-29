@@ -1,55 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.12.4 on darwin)" generated="2025-03-24T11:11:27.721391" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.10.10 on darwin)" generated="2025-03-29T23:45:15.577263" rpa="false" schemaversion="5">
 <suite id="s1" name="Browser Demo" source="/Users/hennatuovinen/Documents/hyte-web/vite-project/tests/browser_demo.robot">
 <test id="s1-t1" name="Test Web Form" line="6">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-03-24T11:11:28.400862" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/hennatuovinen/Documents/hyte-web/vite-project/tests/browser/traces/temp/21d191e5-6d95-441f-990d-fc56128502a6"}</msg>
-<msg time="2025-03-24T11:11:28.438327" level="FAIL">
-#############################################################
-#                                                           #
-#  RF-Browser dependencies not found in installation path!  #
-#           Run `rfbrowser init` to install.                #
-#                                                           #
-#############################################################
-Installation path: /opt/anaconda3/lib/python3.12/site-packages/Browser/wrapper</msg>
+<msg time="2025-03-29T23:45:16.131819" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/hennatuovinen/Documents/hyte-web/vite-project/tests/browser/traces/temp/2440fbb7-70a0-4f93-bc6a-8e6b6487031e"}</msg>
+<msg time="2025-03-29T23:45:16.278615" level="INFO">Starting Browser process /Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/lib/python3.10/site-packages/Browser/wrapper/index.js using port 50004</msg>
+<msg time="2025-03-29T23:45:16.278991" level="INFO">Node startup parameters: ['node', '/Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/lib/python3.10/site-packages/Browser/wrapper/index.js', '50004']</msg>
+<msg time="2025-03-29T23:45:20.194574" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/hennatuovinen/Documents/hyte-web/vite-project/tests/browser/traces/temp/2440fbb7-70a0-4f93-bc6a-8e6b6487031e"}</msg>
 <arg>chromium</arg>
 <arg>headless=No</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="FAIL" start="2025-03-24T11:11:28.399863" elapsed="0.049423">
-#############################################################
-#                                                           #
-#  RF-Browser dependencies not found in installation path!  #
-#           Run `rfbrowser init` to install.                #
-#                                                           #
-#############################################################
-Installation path: /opt/anaconda3/lib/python3.12/site-packages/Browser/wrapper</status>
+<status status="PASS" start="2025-03-29T23:45:16.124526" elapsed="4.071178"/>
 </kw>
 <kw name="New Page" owner="Browser">
+<msg time="2025-03-29T23:45:22.225518" level="INFO">Successfully initialized new page object and opened url: https://www.selenium.dev/selenium/web/web-form.html</msg>
+<msg time="2025-03-29T23:45:22.226052" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://www.selenium.dev/selenium/web/web-form.html</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="NOT RUN" start="2025-03-24T11:11:28.450757" elapsed="0.000593"/>
+<status status="PASS" start="2025-03-29T23:45:20.198606" elapsed="2.029616"/>
 </kw>
 <kw name="Get Title" owner="Browser">
+<msg time="2025-03-29T23:45:22.313691" level="INFO">Title: 'Web form'</msg>
 <arg>==</arg>
 <arg>Web form</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="NOT RUN" start="2025-03-24T11:11:28.452107" elapsed="0.000191"/>
+<status status="PASS" start="2025-03-29T23:45:22.229287" elapsed="0.085829"/>
 </kw>
 <kw name="Type Text" owner="Browser">
+<msg time="2025-03-29T23:45:22.317152" level="INFO">Types the text 'somebody@example.com' in the given field.</msg>
 <arg>[name="my-text"]</arg>
 <arg>${Username}</arg>
 <arg>delay=0.1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-24T11:11:28.452782" elapsed="0.000141"/>
+<status status="PASS" start="2025-03-29T23:45:22.315745" elapsed="2.249885"/>
 </kw>
 <kw name="Type Secret" owner="Browser">
 <arg>[name="my-password"]</arg>
@@ -59,45 +51,115 @@ Installation path: /opt/anaconda3/lib/python3.12/site-packages/Browser/wrapper</
 <tag>Setter</tag>
 <doc>Types the given secret from ``variable_name`` into the text field
 found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-24T11:11:28.453267" elapsed="0.000193"/>
+<status status="PASS" start="2025-03-29T23:45:24.566468" elapsed="1.323041"/>
 </kw>
 <kw name="Type Text" owner="Browser">
+<msg time="2025-03-29T23:45:25.892176" level="INFO">Types the text 'Hello, Robot Framework!
+How are you today?' in the given field.</msg>
 <arg>[name="my-textarea"]</arg>
 <arg>${Message}</arg>
 <arg>delay=0.1 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-24T11:11:28.453825" elapsed="0.000131"/>
+<status status="PASS" start="2025-03-29T23:45:25.890472" elapsed="4.575291"/>
 </kw>
-<kw name="Click With Options" owner="Browser">
-<arg>button</arg>
-<arg>delay=2 s</arg>
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-03-29T23:45:30.469136" level="INFO">Selects the option(s) 1 by attribute SelectAttribute.value from element css=[name="my-select"].</msg>
+<arg>css=[name="my-select"]</arg>
+<arg>value</arg>
+<arg>1</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-03-29T23:45:30.466500" elapsed="0.061800"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-03-29T23:45:30.530057" level="INFO">Fills the text 'San Francisco' in the given field.</msg>
+<arg>css=[name="my-datalist"]</arg>
+<arg>San Francisco</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-29T23:45:30.528984" elapsed="0.076031"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-03-29T23:45:35.771616" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-29T23:45:35.772110" level="INFO">See also file:///Users/hennatuovinen/Documents/hyte-web/vite-project/tests/playwright-log.txt for additional details.</msg>
+<msg time="2025-03-29T23:45:35.775774" level="FAIL">TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator('option[value="San Francisco"]') to be visible
+    15 × locator resolved to hidden &lt;option value="San Francisco"&gt;↵                &lt;/option&gt;
+</msg>
+<arg>css=option[value="San Francisco"]</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2025-03-29T23:45:30.605855" elapsed="5.178764">TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator('option[value="San Francisco"]') to be visible
+    15 × locator resolved to hidden &lt;option value="San Francisco"&gt;↵                &lt;/option&gt;
+</status>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>css=#my-options option</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-24T11:11:28.454260" elapsed="0.000122"/>
+<status status="NOT RUN" start="2025-03-29T23:45:35.785321" elapsed="0.000196"/>
+</kw>
+<kw name="Set Input Files">
+<arg>css=[name="my-file"]</arg>
+<arg>${FILE_PATH}</arg>
+<status status="NOT RUN" start="2025-03-29T23:45:35.785925" elapsed="0.000156"/>
+</kw>
+<kw name="Check Checkbox" owner="Browser">
+<arg>css=#my-check-1</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-03-29T23:45:35.786444" elapsed="0.000149"/>
+</kw>
+<kw name="Check Radio Button">
+<arg>css=#my-radio-2</arg>
+<status status="NOT RUN" start="2025-03-29T23:45:35.786940" elapsed="0.000127"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>css=button[type="submit"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-03-29T23:45:35.787363" elapsed="0.000135"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>css=#message</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2025-03-29T23:45:35.787827" elapsed="0.000126"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<arg>id=message</arg>
+<arg>css=#message</arg>
 <arg>==</arg>
 <arg>Received!</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-24T11:11:28.454649" elapsed="0.000125"/>
+<status status="NOT RUN" start="2025-03-29T23:45:35.788518" elapsed="0.000193"/>
 </kw>
-<status status="FAIL" start="2025-03-24T11:11:28.398654" elapsed="0.057985">
-#############################################################
-#                                                           #
-#  RF-Browser dependencies not found in installation path!  #
-#           Run `rfbrowser init` to install.                #
-#                                                           #
-#############################################################
-Installation path: /opt/anaconda3/lib/python3.12/site-packages/Browser/wrapper</status>
+<msg time="2025-03-29T23:45:35.796701" level="INFO">Set timeout to: 10000</msg>
+<status status="FAIL" start="2025-03-29T23:45:16.121010" elapsed="19.668300">TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator('option[value="San Francisco"]') to be visible
+    15 × locator resolved to hidden &lt;option value="San Francisco"&gt;↵                &lt;/option&gt;
+</status>
 </test>
-<status status="FAIL" start="2025-03-24T11:11:27.725692" elapsed="0.774323"/>
+<status status="FAIL" start="2025-03-29T23:45:15.581079" elapsed="20.217649"/>
 </suite>
 <statistics>
 <total>
@@ -110,21 +172,5 @@ Installation path: /opt/anaconda3/lib/python3.12/site-packages/Browser/wrapper</
 </suite>
 </statistics>
 <errors>
-<msg time="2025-03-24T11:11:28.497004" level="ERROR">Calling method '_end_test' of listener 'Browser' failed: 
-#############################################################
-#                                                           #
-#  RF-Browser dependencies not found in installation path!  #
-#           Run `rfbrowser init` to install.                #
-#                                                           #
-#############################################################
-Installation path: /opt/anaconda3/lib/python3.12/site-packages/Browser/wrapper</msg>
-<msg time="2025-03-24T11:11:28.537970" level="ERROR">Calling method '_end_suite' of listener 'Browser' failed: 
-#############################################################
-#                                                           #
-#  RF-Browser dependencies not found in installation path!  #
-#           Run `rfbrowser init` to install.                #
-#                                                           #
-#############################################################
-Installation path: /opt/anaconda3/lib/python3.12/site-packages/Browser/wrapper</msg>
 </errors>
 </robot>

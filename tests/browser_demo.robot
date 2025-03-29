@@ -6,9 +6,29 @@ Resource    Keywords.robot
 Test Web Form
     New Browser    chromium    headless=No  
     New Page       https://www.selenium.dev/selenium/web/web-form.html 
-    Get Title      ==    Web form  
+    Get Title      ==    Web form 
     Type Text      [name="my-text"]        ${Username}    delay=0.1 s 
     Type Secret    [name="my-password"]    $Password      delay=0.1 s
     Type Text      [name="my-textarea"]    ${Message}     delay=0.1 s
-    Click With Options    button    delay=2 s
-    Get Text       id=message    ==    Received!
+  
+    # Dropdown (select)
+    Select Options By    css=[name="my-select"]    value    1  
+
+    # Datalist (autocomplete)
+    Fill Text    css=[name="my-datalist"]    San Francisco 
+    Wait For Elements State    css=option[value="San Francisco"]    visible    timeout=5s
+    Click    css=#my-options option
+
+    # File input
+    Set Input Files    css=[name="my-file"]    ${FILE_PATH}
+
+    # Checkbox
+    Check Checkbox    css=#my-check-1  
+
+    # Radio button
+    Check Radio Button    css=#my-radio-2  
+
+    # Lähetä lomake
+    Click    css=button[type="submit"]  
+    Wait For Elements State    css=#message    visible    timeout=5s  
+    Get Text       css=#message    ==    Received!
