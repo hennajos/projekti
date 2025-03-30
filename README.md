@@ -49,9 +49,19 @@ Testauskoodi
 
 ![Screenshot 2025-03-29 at 23 47 25](https://github.com/user-attachments/assets/60678e95-16f9-47f2-a220-6c70dd74fc69)
 
-Tulokset. Jostain syystä tuli tässä fail.
+Tulokset. Jostain syystä tuli tässä fail koko ajan.
 
 
+## Tehtävä 4
+Omaan terveyspäiväkirjasovellukseen päiväkirjamerkinnän tekeminen.
+Käytetty ChatGPT 4.0 antamaan testikoodia ja debuggaamaan.
 
+![Screenshot 2025-03-30 at 12 37 32](https://github.com/user-attachments/assets/31b82002-4675-4ca7-ba6c-72d4f9926769)
+Testauskoodi
 
+![Screenshot 2025-03-30 at 12 49 47](https://github.com/user-attachments/assets/f582d0c7-68ea-4a48-ba39-13d2ad7575f6)
+Sivu robotilla täytettynä
+
+![Screenshot 2025-03-30 at 12 49 05](https://github.com/user-attachments/assets/ea8ff222-dcde-4300-b0df-f53451a86f85)
+Tulokset
 
