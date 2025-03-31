@@ -26,6 +26,11 @@ Asennus back-endiin:
 Kirjautumistesti omalle terveyspäiväkirjasovellukselle.
 Käytetty ChatGPT 4.0 antamaan testikoodille pohjan.
 
+Robot-testikoodiin linkki:
+
+[(https://github.com/hennajos/projekti/blob/test/tests/kirjautuminen.robot)
+](https://github.com/hennajos/projekti/blob/test/tests/kirjautuminen.robot)
+
 ![Screenshot 2025-03-29 at 22 55 06](https://github.com/user-attachments/assets/431b9af1-d5db-4a38-bd39-55d672b9a256)
 
 Tässä näkyy testikoodi ja tulos.
@@ -38,6 +43,11 @@ Tässä näkyy Chromium-sivu.
 ## Tehtävä 3
 Web form -sivun toiminta.
 Käytetty ChatGPT 4.0 antamaan testikoodille pohjan testaamaan Dropdown (select), Dropdown (datalist), File input, Checkboxit ja Radio buttonit. Tekoäly auttoi myös debuggaamisessa.
+
+Robot-testikoodiin linkki:
+
+[https://github.com/hennajos/projekti/blob/test/tests/browser_demo.robot
+](https://github.com/hennajos/projekti/blob/test/tests/browser_demo.robot)
 
 ![Screenshot 2025-03-24 at 21 20 16](https://github.com/user-attachments/assets/6375319b-5e23-4e9f-807a-787d6f12e9d1)
 
@@ -55,6 +65,11 @@ Tulokset. Jostain syystä tuli tässä fail koko ajan.
 ## Tehtävä 4
 Omaan terveyspäiväkirjasovellukseen päiväkirjamerkinnän tekeminen.
 Käytetty ChatGPT 4.0 antamaan testikoodia ja debuggaamaan.
+
+Robot-testikoodiin linkki:
+
+[https://github.com/hennajos/projekti/blob/test/tests/paivakirja.robot
+](https://github.com/hennajos/projekti/blob/test/tests/paivakirja.robot)
 
 ![Screenshot 2025-03-30 at 12 37 32](https://github.com/user-attachments/assets/31b82002-4675-4ca7-ba6c-72d4f9926769)
 
