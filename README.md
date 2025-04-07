@@ -83,3 +83,14 @@ Sivu robotilla täytettynä
 
 Tulokset
 
+## Tehtävä 5
+Kirjautumistesti, joka käyttää ’.env’-tiedostoon piilotettuja käyttäjätunnusta ja salasanaa.
+
+Robot-testikoodiin linkki:
+
+![Screenshot 2025-04-04 at 14 59 37](https://github.com/user-attachments/assets/965f76dd-64ad-4965-a462-7be30e07f465)
+
+Testit
+
+
+
