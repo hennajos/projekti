@@ -1,159 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.10.10 on darwin)" generated="2025-03-30T12:36:56.097506" rpa="false" schemaversion="5">
-<suite id="s1" name="Paivakirja" source="/Users/hennatuovinen/Documents/hyte-web/vite-project/tests/paivakirja.robot">
-<test id="s1-t1" name="Testaa Kirjautuminen" line="16">
+<robot generator="Robot 7.2.2 (Python 3.10.10 on darwin)" generated="2025-04-04T17:39:27.690213" rpa="false" schemaversion="5">
+<suite id="s1" name="Crypt Kirjautuminen" source="/Users/hennatuovinen/Documents/hyte-web/vite-project/tests/crypt_kirjautuminen.robot">
+<test id="s1-t1" name="Test Web Form" line="11">
+<kw name="Set Password">
+<msg time="2025-04-04T17:39:28.508284" level="FAIL">No keyword with name 'Set Password' found.</msg>
+<arg>Salasana1</arg>
+<status status="FAIL" start="2025-04-04T17:39:28.507970" elapsed="0.000474">No keyword with name 'Set Password' found.</status>
+</kw>
 <kw name="New Browser" owner="Browser">
-<msg time="2025-03-30T12:36:56.714759" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/hennatuovinen/Documents/hyte-web/vite-project/tests/browser/traces/temp/98338601-7849-40ee-acf1-60063d0db14e"}</msg>
-<msg time="2025-03-30T12:36:56.775963" level="INFO">Starting Browser process /Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/lib/python3.10/site-packages/Browser/wrapper/index.js using port 53397</msg>
-<msg time="2025-03-30T12:36:56.776452" level="INFO">Node startup parameters: ['node', '/Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/lib/python3.10/site-packages/Browser/wrapper/index.js', '53397']</msg>
-<msg time="2025-03-30T12:37:00.585085" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/hennatuovinen/Documents/hyte-web/vite-project/tests/browser/traces/temp/98338601-7849-40ee-acf1-60063d0db14e"}</msg>
 <arg>chromium</arg>
 <arg>headless=No</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-03-30T12:36:56.709430" elapsed="3.876721"/>
+<status status="NOT RUN" start="2025-04-04T17:39:28.510687" elapsed="0.000216"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<arg>viewport={'width': 800, 'height': 600}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="NOT RUN" start="2025-04-04T17:39:28.511642" elapsed="0.001598"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-03-30T12:37:01.955733" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/login.html</msg>
-<msg time="2025-03-30T12:37:01.955908" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>http://localhost:5173/login.html</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-03-30T12:37:00.591438" elapsed="1.366376"/>
+<status status="NOT RUN" start="2025-04-04T17:39:28.515816" elapsed="0.000197"/>
 </kw>
 <kw name="Get Title" owner="Browser">
-<msg time="2025-03-30T12:37:02.031241" level="INFO">Title: 'Kirjaudu'</msg>
 <arg>==</arg>
-<arg>Kirjaudu</arg>
+<arg>Web form</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-03-30T12:37:01.958491" elapsed="0.074859"/>
+<status status="NOT RUN" start="2025-04-04T17:39:28.516578" elapsed="0.000171"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-03-30T12:37:02.036105" level="INFO">Types the text 'testikäyttäjä' in the given field.</msg>
 <arg>id=username</arg>
-<arg>${USERNAME}</arg>
+<arg>${Username}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-03-30T12:37:02.034460" elapsed="0.181614"/>
+<status status="NOT RUN" start="2025-04-04T17:39:28.517323" elapsed="0.000185"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2025-03-30T12:37:02.218933" level="INFO">Types the text 'salasana123' in the given field.</msg>
 <arg>id=password</arg>
-<arg>${PASSWORD}</arg>
+<arg>${Password}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-03-30T12:37:02.216951" elapsed="0.096448"/>
+<status status="NOT RUN" start="2025-04-04T17:39:28.518114" elapsed="0.000175"/>
 </kw>
-<kw name="Click" owner="Browser">
-<msg time="2025-03-30T12:37:02.315830" level="INFO">Clicks the element 'css=button[type="submit"]'.</msg>
-<arg>css=button[type="submit"]</arg>
+<kw name="Click With Options" owner="Browser">
+<arg>button</arg>
+<arg>delay=2 s</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-03-30T12:37:02.314464" elapsed="0.096266"/>
+<status status="NOT RUN" start="2025-04-04T17:39:28.518860" elapsed="0.000173"/>
 </kw>
-<kw name="New Page" owner="Browser">
-<msg time="2025-03-30T12:37:03.047074" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/diary.html</msg>
-<arg>http://localhost:5173/diary.html</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<status status="PASS" start="2025-03-30T12:37:02.413569" elapsed="0.634126"/>
-</kw>
-<kw name="Get Title" owner="Browser">
-<msg time="2025-03-30T12:37:03.094951" level="INFO">Title: 'Päiväkirja'</msg>
-<arg>==</arg>
-<arg>Päiväkirja</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-03-30T12:37:03.050401" elapsed="0.045064"/>
-</kw>
-<kw name="Type Text" owner="Browser">
-<msg time="2025-03-30T12:37:03.100140" level="INFO">Types the text '30-03-2025' in the given field.</msg>
-<arg>css=#entry_date</arg>
-<arg>${ENTRY_DATE}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-03-30T12:37:03.096580" elapsed="0.238023"/>
-</kw>
-<kw name="Type Text" owner="Browser">
-<msg time="2025-03-30T12:37:03.337496" level="INFO">Types the text 'Hyvä' in the given field.</msg>
-<arg>css=#mood</arg>
-<arg>${MOOD}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-03-30T12:37:03.336001" elapsed="0.086698"/>
-</kw>
-<kw name="Type Text" owner="Browser">
-<msg time="2025-03-30T12:37:03.426021" level="INFO">Types the text '60' in the given field.</msg>
-<arg>css=#weight</arg>
-<arg>${WEIGHT}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-03-30T12:37:03.424698" elapsed="0.093144"/>
-</kw>
-<kw name="Type Text" owner="Browser">
-<msg time="2025-03-30T12:37:03.520620" level="INFO">Types the text '8' in the given field.</msg>
-<arg>css=#sleep_hours</arg>
-<arg>${SLEEP_HOURS}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-03-30T12:37:03.518813" elapsed="0.090806"/>
-</kw>
-<kw name="Type Text" owner="Browser">
-<msg time="2025-03-30T12:37:03.612390" level="INFO">Types the text 'Omena' in the given field.</msg>
-<arg>css=#meal</arg>
-<arg>${MEAL}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-03-30T12:37:03.610489" elapsed="0.067428"/>
-</kw>
-<kw name="Type Text" owner="Browser">
-<msg time="2025-03-30T12:37:03.682185" level="INFO">Types the text 'Testimerkintä' in the given field.</msg>
-<arg>css=#notes</arg>
-<arg>${NOTES}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-03-30T12:37:03.679072" elapsed="0.144449"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2025-03-30T12:37:03.826780" level="INFO">Clicks the element 'css=button[type="submit"]'.</msg>
-<arg>css=button[type="submit"]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-03-30T12:37:03.824991" elapsed="0.105073"/>
-</kw>
-<msg time="2025-03-30T12:37:03.947400" level="INFO">Set timeout to: 10000</msg>
-<status status="PASS" start="2025-03-30T12:36:56.706281" elapsed="7.225032"/>
+<msg time="2025-04-04T17:39:28.619062" level="INFO">Starting Browser process /Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/lib/python3.10/site-packages/Browser/wrapper/index.js using port 60402</msg>
+<msg time="2025-04-04T17:39:28.619428" level="INFO">Node startup parameters: ['node', '/Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/lib/python3.10/site-packages/Browser/wrapper/index.js', '60402']</msg>
+<status status="FAIL" start="2025-04-04T17:39:28.500921" elapsed="0.018735">No keyword with name 'Set Password' found.</status>
 </test>
-<status status="PASS" start="2025-03-30T12:36:56.108574" elapsed="7.843150"/>
+<status status="FAIL" start="2025-04-04T17:39:27.693615" elapsed="4.754995"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Paivakirja" id="s1" pass="1" fail="0" skip="0">Paivakirja</stat>
+<stat name="Crypt Kirjautuminen" id="s1" pass="0" fail="1" skip="0">Crypt Kirjautuminen</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2025-04-04T17:39:28.498308" level="ERROR">Error in file '/Users/hennatuovinen/Documents/hyte-web/vite-project/tests/crypt_kirjautuminen.robot' on line 3: Importing library 'CryptoLibrary' failed: ModuleNotFoundError: No module named 'questionary'
+Traceback (most recent call last):
+  File "/Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/lib/python3.10/site-packages/CryptoLibrary/__init__.py", line 20, in &lt;module&gt;
+    from CryptoLibrary.__main__ import Encrypter
+  File "/Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/lib/python3.10/site-packages/CryptoLibrary/__main__.py", line 17, in &lt;module&gt;
+    from questionary import Style
+PYTHONPATH:
+  /Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/bin
+  /Library/Frameworks/Python.framework/Versions/3.10/lib/python310.zip
+  /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10
+  /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload
+  /Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/lib/python3.10/site-packages</msg>
 </errors>
 </robot>
