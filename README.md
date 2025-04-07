@@ -86,8 +86,6 @@ Tulokset
 ## Tehtävä 5
 Kirjautumistesti, joka käyttää ’.env’-tiedostoon piilotettuja käyttäjätunnusta ja salasanaa.
 
-Robot-testikoodiin linkki:
-
 ![Screenshot 2025-04-04 at 14 59 37](https://github.com/user-attachments/assets/965f76dd-64ad-4965-a462-7be30e07f465)
 
 Testit
@@ -97,4 +95,19 @@ Linkki testikoodiin:
 [https://github.com/hennajos/projekti/blob/test/tests/env_kirjautuminen.robot
 ](https://github.com/hennajos/projekti/blob/test/tests/env_kirjautuminen.robot)
 
+## Tehtävä 6
+
+kirjautumistesti, missä sekä salasana että käyttäjätunnus on kryptattu käyttäen CryptoLibrarya.
+Käytetty ChatGPT 4.0 debuggauksessa. 
+
+![Screenshot 2025-04-07 at 21 14 00](https://github.com/user-attachments/assets/a4bb2f8c-f28e-4cba-9561-26edc8e18e44)
+
+Testissä tuli ongelmia kirjastojen kanssa vaikka aiemmin on toiminut. Yritän saada toimimaan.
+
+![Screenshot 2025-04-07 at 21 13 35](https://github.com/user-attachments/assets/961c0228-12ad-4fc1-822f-b9a76bde02d4)
+
+Linkki koodiin
+
+[https://github.com/hennajos/projekti/blob/test/tests/crypt_kirjautuminen.robot
+](https://github.com/hennajos/projekti/blob/test/tests/crypt_kirjautuminen.robot)
 
