@@ -92,5 +92,9 @@ Robot-testikoodiin linkki:
 
 Testit
 
+Linkki testikoodiin:
+
+[https://github.com/hennajos/projekti/blob/test/tests/env_kirjautuminen.robot
+](https://github.com/hennajos/projekti/blob/test/tests/env_kirjautuminen.robot)
 
 
