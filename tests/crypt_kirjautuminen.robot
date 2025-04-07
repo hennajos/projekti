@@ -1,6 +1,6 @@
 *** Settings ***
 Library     Browser     	    auto_closing_level=SUITE
-Library     CryptoLibrary     variable_decryption=True   #Kryptatut muuttujat puretaan automaattisesti
+Library     CryptoLibrary     variable_decryption=True
 
 *** Variables ***
 ${Username}    crypt:kX7n2UPo3PRaWShZihyJBS9FOIOINNMmsfYIsnMstS2hS65olVLgKvgOX1MMvYEQLWXVvGo=
