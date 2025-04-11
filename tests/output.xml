@@ -1,72 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.10.10 on darwin)" generated="2025-04-04T17:39:27.690213" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.10.10 on darwin)" generated="2025-04-07T11:24:17.944589" rpa="false" schemaversion="5">
 <suite id="s1" name="Crypt Kirjautuminen" source="/Users/hennatuovinen/Documents/hyte-web/vite-project/tests/crypt_kirjautuminen.robot">
 <test id="s1-t1" name="Test Web Form" line="11">
-<kw name="Set Password">
-<msg time="2025-04-04T17:39:28.508284" level="FAIL">No keyword with name 'Set Password' found.</msg>
-<arg>Salasana1</arg>
-<status status="FAIL" start="2025-04-04T17:39:28.507970" elapsed="0.000474">No keyword with name 'Set Password' found.</status>
-</kw>
-<kw name="New Browser" owner="Browser">
+<kw name="New Browser">
+<msg time="2025-04-07T11:24:18.368964" level="FAIL">No keyword with name 'New Browser' found.</msg>
 <arg>chromium</arg>
 <arg>headless=No</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new playwright Browser with specified options.</doc>
-<status status="NOT RUN" start="2025-04-04T17:39:28.510687" elapsed="0.000216"/>
+<status status="FAIL" start="2025-04-07T11:24:18.367420" elapsed="0.001892">No keyword with name 'New Browser' found.</status>
 </kw>
-<kw name="New Context" owner="Browser">
+<kw name="New Context">
 <arg>viewport={'width': 800, 'height': 600}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new BrowserContext with specified options.</doc>
-<status status="NOT RUN" start="2025-04-04T17:39:28.511642" elapsed="0.001598"/>
+<status status="NOT RUN" start="2025-04-07T11:24:18.372765" elapsed="0.000917"/>
 </kw>
-<kw name="New Page" owner="Browser">
+<kw name="New Page">
 <arg>http://localhost:5173/login.html</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<status status="NOT RUN" start="2025-04-04T17:39:28.515816" elapsed="0.000197"/>
+<status status="NOT RUN" start="2025-04-07T11:24:18.375173" elapsed="0.000090"/>
 </kw>
-<kw name="Get Title" owner="Browser">
+<kw name="Get Title">
 <arg>==</arg>
 <arg>Web form</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the title of the current page.</doc>
-<status status="NOT RUN" start="2025-04-04T17:39:28.516578" elapsed="0.000171"/>
+<status status="NOT RUN" start="2025-04-07T11:24:18.415557" elapsed="0.000109"/>
 </kw>
-<kw name="Type Text" owner="Browser">
+<kw name="Type Text">
 <arg>id=username</arg>
 <arg>${Username}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-04T17:39:28.517323" elapsed="0.000185"/>
+<status status="NOT RUN" start="2025-04-07T11:24:18.416802" elapsed="0.000102"/>
 </kw>
-<kw name="Type Text" owner="Browser">
+<kw name="Type Text">
 <arg>id=password</arg>
 <arg>${Password}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-04T17:39:28.518114" elapsed="0.000175"/>
+<status status="NOT RUN" start="2025-04-07T11:24:18.417691" elapsed="0.000093"/>
 </kw>
-<kw name="Click With Options" owner="Browser">
+<kw name="Click With Options">
 <arg>button</arg>
 <arg>delay=2 s</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-04T17:39:28.518860" elapsed="0.000173"/>
+<status status="NOT RUN" start="2025-04-07T11:24:18.418654" elapsed="0.000117"/>
 </kw>
-<msg time="2025-04-04T17:39:28.619062" level="INFO">Starting Browser process /Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/lib/python3.10/site-packages/Browser/wrapper/index.js using port 60402</msg>
-<msg time="2025-04-04T17:39:28.619428" level="INFO">Node startup parameters: ['node', '/Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/lib/python3.10/site-packages/Browser/wrapper/index.js', '60402']</msg>
-<status status="FAIL" start="2025-04-04T17:39:28.500921" elapsed="0.018735">No keyword with name 'Set Password' found.</status>
+<status status="FAIL" start="2025-04-07T11:24:18.357700" elapsed="0.064924">No keyword with name 'New Browser' found.</status>
 </test>
-<status status="FAIL" start="2025-04-04T17:39:27.693615" elapsed="4.754995"/>
+<status status="FAIL" start="2025-04-07T11:24:17.948528" elapsed="0.476037"/>
 </suite>
 <statistics>
 <total>
@@ -79,7 +51,27 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2025-04-04T17:39:28.498308" level="ERROR">Error in file '/Users/hennatuovinen/Documents/hyte-web/vite-project/tests/crypt_kirjautuminen.robot' on line 3: Importing library 'CryptoLibrary' failed: ModuleNotFoundError: No module named 'questionary'
+<msg time="2025-04-07T11:24:18.329704" level="ERROR">Error in file '/Users/hennatuovinen/Documents/hyte-web/vite-project/tests/crypt_kirjautuminen.robot' on line 2: Importing library 'Browser' failed: ImportError: cannot import name 'cygrpc' from 'grpc._cython' (/Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/lib/python3.10/site-packages/grpc/_cython/__init__.py)
+Traceback (most recent call last):
+  File "/Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/lib/python3.10/site-packages/Browser/__init__.py", line 16, in &lt;module&gt;
+    from .browser import Browser
+  File "/Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/lib/python3.10/site-packages/Browser/browser.py", line 39, in &lt;module&gt;
+    from .keywords import (
+  File "/Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/lib/python3.10/site-packages/Browser/keywords/__init__.py", line 22, in &lt;module&gt;
+    from .getters import Getters
+  File "/Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/lib/python3.10/site-packages/Browser/keywords/getters.py", line 19, in &lt;module&gt;
+    import grpc  # type: ignore
+  File "/Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/lib/python3.10/site-packages/grpc/__init__.py", line 22, in &lt;module&gt;
+    from grpc import _compression
+  File "/Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/lib/python3.10/site-packages/grpc/_compression.py", line 20, in &lt;module&gt;
+    from grpc._cython import cygrpc
+PYTHONPATH:
+  /Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/bin
+  /Library/Frameworks/Python.framework/Versions/3.10/lib/python310.zip
+  /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10
+  /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload
+  /Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/lib/python3.10/site-packages</msg>
+<msg time="2025-04-07T11:24:18.355574" level="ERROR">Error in file '/Users/hennatuovinen/Documents/hyte-web/vite-project/tests/crypt_kirjautuminen.robot' on line 3: Importing library 'CryptoLibrary' failed: ModuleNotFoundError: No module named 'questionary'
 Traceback (most recent call last):
   File "/Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/lib/python3.10/site-packages/CryptoLibrary/__init__.py", line 20, in &lt;module&gt;
     from CryptoLibrary.__main__ import Encrypter

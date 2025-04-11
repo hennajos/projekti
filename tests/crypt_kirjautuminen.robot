@@ -1,6 +1,6 @@
 *** Settings ***
 Library     Browser     	    auto_closing_level=SUITE
-Library     CryptoLibrary     variable_decryption=True   #Kryptatut muuttujat puretaan automaattisesti
+Library     CryptoLibrary     variable_decryption=True
 
 *** Variables ***
 ${Username}    crypt:kX7n2UPo3PRaWShZihyJBS9FOIOINNMmsfYIsnMstS2hS65olVLgKvgOX1MMvYEQLWXVvGo=
@@ -9,7 +9,6 @@ ${Message}     Hello, Robot Framework!\nHow are you today?
 
 *** Test Cases ***
 Test Web Form
-    Set Password    Salasana1
     New Browser     chromium    headless=No
     New Context     viewport={'width': 800, 'height': 600}
     New Page        http://localhost:5173/login.html 

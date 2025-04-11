@@ -1,4 +1,4 @@
-#!/Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/bin/python3.10
+#!/Users/hennatuovinen/Documents/hyte-web/vite-project/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
