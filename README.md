@@ -111,3 +111,16 @@ Linkki koodiin
 [https://github.com/hennajos/projekti/blob/test/tests/crypt_kirjautuminen.robot
 ](https://github.com/hennajos/projekti/blob/test/tests/crypt_kirjautuminen.robot)
 
+## Tehtävä 7
+
+Ohjataan raportti- ja lokitiedostot outputs -kansioon.
+
+![Screenshot 2025-04-11 at 15 49 02](https://github.com/user-attachments/assets/e629016c-f4a9-432f-9f24-ac0b3aada647)
+
+Komento
+
+![Screenshot 2025-04-11 at 15 49 16](https://github.com/user-attachments/assets/8b2475e8-f413-4c6d-bb14-b16d86b796eb)
+
+Outputs -kansioon tulee raportti- ja lokitiedostot
+
+
