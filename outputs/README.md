@@ -1,7 +1,7 @@
 Lokitiedostot:
 
-[Linkki] (./outputs/log.html)
+[Linkki](./outputs/log.html)
 
 Raporttitiedostot:
 
-[Linkki] (./outputs/report.html)
+[Linkki](./outputs/report.html)
